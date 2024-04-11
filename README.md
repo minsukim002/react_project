@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# 스타일링
+## 공통 스타일 : src/index.css
+- 공통 폰트
+- 스타일 초기화
+- 기준 폰트 사이즈 : styles/fontSize.js / small, normal, medium, big, extraBing
+- 기준 컬러: 

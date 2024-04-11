@@ -118,7 +118,7 @@ import './i18n';
 
 ...
 
-````
+```
 
 -적용하기: useTranslation 훅 / react-i18next -
     -t : 메세지 조회 함수
@@ -146,3 +146,4 @@ const App = () => {
 };
 
 export default App;
+```

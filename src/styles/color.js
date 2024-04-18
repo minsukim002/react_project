@@ -1,5 +1,3 @@
-import { CgDanger } from 'react-icons/cg';
-
 export const color = {
   primary: '#007bff',
   secondary: '#6c757d',
@@ -12,12 +10,12 @@ export const color = {
 };
 
 export const buttonColor = {
-    primary: [color.primary, '#fff'],
-    secondary: [color.secondary, '#fff'],
-    success: [color.success, '#fff'],
-    danger: [color.danger, '#fff'],
-    warning: [color.warning, '#212529'],
-    info: [color.info, '#fff'],
-    light: [color.light, '#212529'],
-    dark: [color.dark, 'afff'],
+  primary: [color.primary, '#fff', color.primary],
+  secondary: [color.secondary, '#fff', color.secondary],
+  success: [color.success, '#fff', color.success],
+  danger: [color.danger, '#fff', color.danger],
+  warning: [color.warning, '#212529', '#212529'],
+  info: [color.info, '#fff', color.info],
+  light: [color.light, '#212529', '#212529'],
+  dark: [color.dark, '#fff', color.dark],
 };

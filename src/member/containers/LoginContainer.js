@@ -1,7 +1,8 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import LoginForm from '../components/LoginForm';
+import UserInfoContext from '../modules/UserInfoContext';
 
 const LoginContainer = () => {
   const [form, setForm] = useState({});
@@ -10,6 +11,10 @@ const LoginContainer = () => {
 
   const { t } = useTranslation();
   const navigate = useNavigate();
+
+  const {
+    actions: { setIsLogin, setUserInfo },
+  } = useContext(UserInfoContext);
 
   /**
    * 로그인 처리
@@ -52,6 +57,8 @@ const LoginContainer = () => {
       }
 
       // 로그인 처리
+      setIsLogin(true);
+      setUserInfo({ email: 'user01@test.org', name: '사용자01' });
 
       /**
        * 후속 처리 : 회원 전용 서비스 URL로 이동
